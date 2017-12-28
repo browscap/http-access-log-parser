@@ -4,11 +4,12 @@ declare(strict_types = 1);
 namespace BrowscapReaderTest\Command;
 
 use BrowscapReader\Command\LogfileCommand;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @covers \BrowscapReader\Command\LogfileCommand
  */
-final class LogfileCommandTest extends \PHPUnit\Framework\TestCase
+final class LogfileCommandTest extends TestCase
 {
     public function testConfigure() : void
     {

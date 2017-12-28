@@ -5,16 +5,17 @@ namespace BrowscapReaderTest\Helper;
 
 use BrowscapReader\Helper\LoggerHelper;
 use Monolog\Logger;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
  * @covers \BrowscapReader\Helper\LoggerHelper
  */
-class LoggerHelperTest extends \PHPUnit\Framework\TestCase
+class LoggerHelperTest extends TestCase
 {
     public function testCreate() : void
     {
-        /** @var OutputInterface|\PHPUnit_Framework_MockObject_MockObject $logger */
+        /** @var OutputInterface $logger */
         $output = $this->createMock(OutputInterface::class);
 
         self::assertInstanceOf(Logger::class, LoggerHelper::createDefaultLogger($output));

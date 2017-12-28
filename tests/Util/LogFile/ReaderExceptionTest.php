@@ -4,11 +4,12 @@ declare(strict_types = 1);
 namespace BrowscapReaderTest\Util\LogFile;
 
 use BrowscapReader\Util\Logfile\ReaderException;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @covers \BrowscapReader\Util\Logfile\ReaderException
  */
-class ReaderExceptionTest extends \PHPUnit\Framework\TestCase
+class ReaderExceptionTest extends TestCase
 {
     public function testUserAgentParserError() : void
     {
