@@ -2,7 +2,7 @@
 
 This is a log file reader for apache log files to parse useragents.
 
-[![Build Status](https://secure.travis-ci.org/browscap/browscap-file-reader.png?branch=master)](http://travis-ci.org/browscap/browscap-file-reader) [![Code Coverage](https://scrutinizer-ci.com/g/browscap/browscap-file-reader/badges/coverage.png?s=61cb32ca83d2053ed9b140690b6e18dfa00e4639)](https://scrutinizer-ci.com/g/browscap/browscap-file-reader/) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/browscap/browscap-file-reader/badges/quality-score.png?s=db1cc1699b1cb6ac6ae46754ef9612217eba5526)](https://scrutinizer-ci.com/g/browscap/browscap-file-reader/)
+[![Build Status](https://secure.travis-ci.org/browscap/browscap-file-reader.png?branch=master)](http://travis-ci.org/browscap/browscap-file-reader)
 
 ## Installation
 
