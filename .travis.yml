@@ -3,7 +3,6 @@ sudo: false
 
 php:
   - 7.1
-  - 7.2
 
 os: linux
 
@@ -36,8 +35,11 @@ script: vendor/bin/phpunit -c phpunit.xml.dist --no-coverage --colors --verbose
 jobs:
   fast_finish: true
   allow_failures:
+    - php: 7.2
     - php: nightly
   include:
+    - php: 7.2
+      env: COMPOSER_FLAGS="--ignore-platform-reqs"
     - php: nightly
       env: COMPOSER_FLAGS="--ignore-platform-reqs"
 
