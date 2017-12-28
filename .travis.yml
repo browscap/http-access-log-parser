@@ -57,7 +57,8 @@ jobs:
     - stage: composer validate
       php: 7.1
       install: skip
-      script: composer validate --strict
+      # do not use the "--strict" option, it will break the build if "dev-master" is used in a direct dependency
+      script: composer validate
 
     - stage: check coding style
       php: 7.1
