@@ -9,7 +9,7 @@ This is a log file reader for apache log files to parse useragents.
 Run the command below to install via Composer
 
 ```shell
-composer require browscap/browscap-file-reader 
+composer require browscap/http-access-log-parser 
 ```
 
 ## the CLI Log command
@@ -17,7 +17,7 @@ composer require browscap/browscap-file-reader
 The `log` command parses a single access log file or a directory with access log files and writes the results into an output file. 
 
 ```php
-vendor/bin/browscap-file-reader browscap:log
+vendor/bin/log-parser browscap:log
 ```
 
 ### options
