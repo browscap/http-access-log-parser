@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReader\Helper;
+namespace HttpAccessLogParser\Helper;
 
 use Monolog\ErrorHandler;
 use Monolog\Handler\ErrorLogHandler;

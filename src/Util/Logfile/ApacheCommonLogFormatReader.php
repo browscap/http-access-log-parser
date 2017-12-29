@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReader\Util\Logfile;
+namespace HttpAccessLogParser\Util\Logfile;
 
 /**
  * reader to analyze the common log file of apache

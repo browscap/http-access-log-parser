@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReader\Util\Logfile;
+namespace HttpAccessLogParser\Util\Logfile;
 
 /**
  * reader collection class
@@ -9,16 +9,16 @@ namespace BrowscapReader\Util\Logfile;
 final class ReaderCollection implements ReaderInterface
 {
     /**
-     * @var \BrowscapReader\Util\Logfile\ReaderInterface[]
+     * @var \HttpAccessLogParser\Util\Logfile\ReaderInterface[]
      */
     private $readers = [];
 
     /**
      * adds a new reader to this collection
      *
-     * @param \BrowscapReader\Util\Logfile\ReaderInterface $reader
+     * @param \HttpAccessLogParser\Util\Logfile\ReaderInterface $reader
      *
-     * @return \BrowscapReader\Util\Logfile\ReaderCollection
+     * @return \HttpAccessLogParser\Util\Logfile\ReaderCollection
      */
     public function addReader(ReaderInterface $reader)
     {
@@ -46,7 +46,7 @@ final class ReaderCollection implements ReaderInterface
     /**
      * @param string $line
      *
-     * @throws \BrowscapReader\Util\Logfile\ReaderException
+     * @throws \HttpAccessLogParser\Util\Logfile\ReaderException
      *
      * @return string
      */

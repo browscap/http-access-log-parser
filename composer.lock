@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "61e9d6da8d1e8b2bdc94c76d635dccb7",
+    "content-hash": "a435be341456a372d9c9da980929fbc8",
     "packages": [
         {
             "name": "browscap/browscap-php",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/browscap/browscap-php.git",
-                "reference": "b14934edd8d9891ffe930888d191d9fc3f2a02b7"
+                "reference": "d1b2d58019a0fc89231225fb562b49c6578ed9ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/browscap/browscap-php/zipball/b14934edd8d9891ffe930888d191d9fc3f2a02b7",
-                "reference": "b14934edd8d9891ffe930888d191d9fc3f2a02b7",
+                "url": "https://api.github.com/repos/browscap/browscap-php/zipball/d1b2d58019a0fc89231225fb562b49c6578ed9ab",
+                "reference": "d1b2d58019a0fc89231225fb562b49c6578ed9ab",
                 "shasum": ""
             },
             "require": {
@@ -27,15 +27,14 @@
                 "psr/simple-cache": "^1.0",
                 "roave/doctrine-simplecache": "^1.1",
                 "symfony/console": "^3.3||^4.0",
-                "symfony/filesystem": "^3.3||^4.0",
-                "symfony/finder": "^3.3||^4.0"
+                "symfony/filesystem": "^3.3||^4.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.9",
                 "mikey179/vfsstream": "^1.6",
                 "phpstan/phpstan": "^0.9",
                 "phpunit/phpunit": "^6.5",
-                "squizlabs/php_codesniffer": "^3.1"
+                "squizlabs/php_codesniffer": "^3.2"
             },
             "suggest": {
                 "ext-curl": "to use curl requests to get the ini file"
@@ -75,7 +74,7 @@
                 "get_browser",
                 "user agent"
             ],
-            "time": "2017-12-12T14:27:05+00:00"
+            "time": "2017-12-29T10:45:26+00:00"
         },
         {
             "name": "doctrine/cache",

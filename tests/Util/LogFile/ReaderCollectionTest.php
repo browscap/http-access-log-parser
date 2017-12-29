@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReaderTest\Util\LogFile;
+namespace HttpAccessLogParserTest\Util\LogFile;
 
-use BrowscapReader\Util\Logfile\ReaderCollection;
-use BrowscapReader\Util\Logfile\ReaderException;
-use BrowscapReader\Util\Logfile\ReaderInterface;
+use HttpAccessLogParser\Util\Logfile\ReaderCollection;
+use HttpAccessLogParser\Util\Logfile\ReaderException;
+use HttpAccessLogParser\Util\Logfile\ReaderInterface;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \BrowscapReader\Util\Logfile\ReaderCollection
+ * @covers \HttpAccessLogParser\Util\Logfile\ReaderCollection
  */
 final class ReaderCollectionTest extends TestCase
 {
@@ -25,7 +25,7 @@ final class ReaderCollectionTest extends TestCase
 
     public function testAddReader() : void
     {
-        /** @var \BrowscapReader\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
+        /** @var \HttpAccessLogParser\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
         $reader = $this->createMock(ReaderInterface::class);
 
         self::assertSame($this->object, $this->object->addReader($reader));
@@ -33,7 +33,7 @@ final class ReaderCollectionTest extends TestCase
 
     public function testTestSuccessful() : void
     {
-        /** @var \BrowscapReader\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
+        /** @var \HttpAccessLogParser\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
         $reader = $this->createMock(ReaderInterface::class);
         $reader
             ->expects(self::once())
@@ -47,7 +47,7 @@ final class ReaderCollectionTest extends TestCase
 
     public function testTestNotSuccessful() : void
     {
-        /** @var \BrowscapReader\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
+        /** @var \HttpAccessLogParser\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
         $reader = $this->createMock(ReaderInterface::class);
         $reader
             ->expects(self::once())
@@ -60,11 +60,11 @@ final class ReaderCollectionTest extends TestCase
     }
 
     /**
-     * @throws \BrowscapReader\Util\Logfile\ReaderException
+     * @throws \HttpAccessLogParser\Util\Logfile\ReaderException
      */
     public function testReadSuccessful() : void
     {
-        /** @var \BrowscapReader\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
+        /** @var \HttpAccessLogParser\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
         $reader = $this->createMock(ReaderInterface::class);
         $reader
             ->expects(self::once())
@@ -81,11 +81,11 @@ final class ReaderCollectionTest extends TestCase
     }
 
     /**
-     * @throws \BrowscapReader\Util\Logfile\ReaderException
+     * @throws \HttpAccessLogParser\Util\Logfile\ReaderException
      */
     public function testReadNotSuccessful() : void
     {
-        /** @var \BrowscapReader\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
+        /** @var \HttpAccessLogParser\Util\Logfile\ReaderInterface|\PHPUnit_Framework_MockObject_MockObject $reader */
         $reader = $this->createMock(ReaderInterface::class);
         $reader
             ->expects(self::once())

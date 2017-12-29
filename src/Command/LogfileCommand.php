@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReader\Command;
+namespace HttpAccessLogParser\Command;
 
 use BrowscapPHP\Browscap;
 use BrowscapPHP\Exception\InvalidArgumentException;
@@ -10,12 +10,12 @@ use BrowscapPHP\Exception\UnknownBrowserTypeException;
 use BrowscapPHP\Exception\UnknownDeviceException;
 use BrowscapPHP\Exception\UnknownEngineException;
 use BrowscapPHP\Exception\UnknownPlatformException;
-use BrowscapReader\Helper\Filesystem;
-use BrowscapReader\Helper\LoggerHelper;
-use BrowscapReader\Util\Logfile\ReaderCollection;
-use BrowscapReader\Util\Logfile\ReaderException;
-use BrowscapReader\Util\Logfile\ReaderFactory;
 use Doctrine\Common\Cache\FilesystemCache;
+use HttpAccessLogParser\Helper\Filesystem;
+use HttpAccessLogParser\Helper\LoggerHelper;
+use HttpAccessLogParser\Util\Logfile\ReaderCollection;
+use HttpAccessLogParser\Util\Logfile\ReaderException;
+use HttpAccessLogParser\Util\Logfile\ReaderFactory;
 use Roave\DoctrineSimpleCache\SimpleCacheAdapter;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;

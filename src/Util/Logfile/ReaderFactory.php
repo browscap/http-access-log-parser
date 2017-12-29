@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReader\Util\Logfile;
+namespace HttpAccessLogParser\Util\Logfile;
 
 /**
  * abstract parent class for all readers
@@ -9,7 +9,7 @@ namespace BrowscapReader\Util\Logfile;
 final class ReaderFactory
 {
     /**
-     * @return \BrowscapReader\Util\Logfile\ReaderCollection
+     * @return \HttpAccessLogParser\Util\Logfile\ReaderCollection
      */
     public static function factory() : ReaderCollection
     {

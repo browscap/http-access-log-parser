@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReaderTest\Util\LogFile;
+namespace HttpAccessLogParserTest\Util\LogFile;
 
-use BrowscapReader\Util\Logfile\ApacheCommonLogFormatReader;
-use BrowscapReader\Util\Logfile\ReaderException;
+use HttpAccessLogParser\Util\Logfile\ApacheCommonLogFormatReader;
+use HttpAccessLogParser\Util\Logfile\ReaderException;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \BrowscapReader\Util\Logfile\ApacheCommonLogFormatReader
+ * @covers \HttpAccessLogParser\Util\Logfile\ApacheCommonLogFormatReader
  */
 final class ApacheCommonLogFormatReaderTest extends TestCase
 {
@@ -28,7 +28,7 @@ final class ApacheCommonLogFormatReaderTest extends TestCase
     }
 
     /**
-     * @throws \BrowscapReader\Util\Logfile\ReaderException
+     * @throws \HttpAccessLogParser\Util\Logfile\ReaderException
      */
     public function testReadFails() : void
     {

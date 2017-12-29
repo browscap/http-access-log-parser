@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReader\Helper;
+namespace HttpAccessLogParser\Helper;
 
-use BrowscapReader\Exception as BaseException;
+use HttpAccessLogParser\Exception as BaseException;
 
 /**
  * Exception to handle errors inside the helpers.
