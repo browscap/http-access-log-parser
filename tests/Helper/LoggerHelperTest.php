@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReaderTest\Helper;
+namespace HttpAccessLogParserTest\Helper;
 
-use BrowscapReader\Helper\LoggerHelper;
+use HttpAccessLogParser\Helper\LoggerHelper;
 use Monolog\Logger;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * @covers \BrowscapReader\Helper\LoggerHelper
+ * @covers \HttpAccessLogParser\Helper\LoggerHelper
  */
 class LoggerHelperTest extends TestCase
 {

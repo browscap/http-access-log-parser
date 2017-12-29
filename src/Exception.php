@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReader;
+namespace HttpAccessLogParser;
 
 /**
  * Browscap.ini parsing class base exception

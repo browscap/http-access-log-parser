@@ -19,7 +19,7 @@
         <ini name="date.timezone" value="UTC"/>
     </php>
 
-    <testsuite name="BrowscapReader Test Suite">
+    <testsuite name="HttpAccessLogParser Test Suite">
         <directory>tests/</directory>
     </testsuite>
 

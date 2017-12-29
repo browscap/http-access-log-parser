@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReader\Util\Logfile;
+namespace HttpAccessLogParser\Util\Logfile;
 
 use BrowscapPHP\Exception\DomainException;
 

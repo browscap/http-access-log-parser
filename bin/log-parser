@@ -22,7 +22,7 @@ if (!$foundVendorAutoload) {
 }
 
 use Symfony\Component\Console\Application;
-use BrowscapReader\Command;
+use HttpAccessLogParser\Command;
 
 $cacheDirectory = $baseDir . '/cache/';
 $defaultIniFile = $baseDir . '/resources/browscap.ini';

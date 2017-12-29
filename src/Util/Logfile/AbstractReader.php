@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReader\Util\Logfile;
+namespace HttpAccessLogParser\Util\Logfile;
 
 /**
  * abstract parent class for all readers
@@ -23,7 +23,7 @@ abstract class AbstractReader implements ReaderInterface
     /**
      * @param string $line
      *
-     * @throws \BrowscapReader\Util\Logfile\ReaderException
+     * @throws \HttpAccessLogParser\Util\Logfile\ReaderException
      *
      * @return string
      */

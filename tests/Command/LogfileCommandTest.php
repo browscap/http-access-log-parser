@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace BrowscapReaderTest\Command;
+namespace HttpAccessLogParserTest\Command;
 
-use BrowscapReader\Command\LogfileCommand;
+use HttpAccessLogParser\Command\LogfileCommand;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \BrowscapReader\Command\LogfileCommand
+ * @covers \HttpAccessLogParser\Command\LogfileCommand
  */
 final class LogfileCommandTest extends TestCase
 {
